@@ -474,7 +474,19 @@ background-color: transparent;
 .btn.btn-default:active{
     background:#fff;
     border-color: #fff;
-    color:fff;
+    color:#fff;
+}
+
+.btn.btn-info{
+  color:#fff;
+  background: #3498db;
+}
+
+.btn.btn-info:hover,
+.btn.btn-info:active{
+    background:#fff;
+    border-color: #3498db;
+    color:#3498db;
 }
 
 input,.input-lg,button{
