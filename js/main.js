@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 
 /* Scroll hire me button to contact page */
-	$('.hire-me').click(function(){
+	$('.contact-me').click(function(){
 		    $('html, body').animate({
         		scrollTop: $( $(this).attr('href') ).offset().top
     		}, 500);
@@ -94,10 +94,10 @@ $('.chart').waypoint(function() {
 	
 		$.vegas('slideshow', {
 			  backgrounds:[
-                { src:'https://farm8.staticflickr.com/7087/7221424302_5060d035ea_k.jpg', fade:1000 },
-				{ src:'http://upload.wikimedia.org/wikipedia/commons/e/ed/Arthur_Ravenel_Jr._Bridge%27s_cables.jpg', fade:1000 },
-				{ src:'http://upload.wikimedia.org/wikipedia/commons/3/38/Williams-Brice_Stadium.jpg', fade:1000 },
-				{ src:'http://upload.wikimedia.org/wikipedia/commons/b/ba/Charleston-SC-Waterfront-Park.jpg', fade:1000 }
+                { src:'img/slider/01.jpg', fade:1000 },
+                { src:'img/slider/02.jpg', fade:1000 },
+                { src:'img/slider/03.jpg', fade:1000 },
+                { src:'img/slider/04.jpg', fade:1000 }
 			  ]
 			})('overlay', {
 			  src:'img/overlays/16.png'
