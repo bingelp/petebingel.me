@@ -10,48 +10,6 @@ $(document).ready(function(){
     return false;
 	});
 
-    /* For Bootstrap current state on portfolio sorting */
-
-    $('ul.nav-pills li a').click(function () {
-        $('ul.nav-pills li.active').removeClass('active');
-        $(this).parent('li').addClass('active');
-    });
-
-/* portfolio mixitup */
-
-	$(window).load(function(){
-    var $container = $('.grid-wrapper');
-    $container.isotope({
-        filter: '*',
-        animationOptions: {
-            duration: 750,
-            easing: 'linear',
-            queue: false
-        }
-    });
- 
-    $('.grid-controls li a').click(function(){
-        $('.grid-controls .current').removeClass('current');
-        $(this).addClass('current');
- 
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            filter: selector,
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
-            }
-         });
-         return false;
-    });
-});
-
-
-/* Magnific Popup */
-$('.grid-wrapper').magnificPopup({delegate: 'a', type: 'image',gallery:{enabled:true}});
-
-
 
 /* Sticky menu */
 $(".navbar").sticky({topSpacing: 0});
@@ -81,10 +39,10 @@ $('.chart').waypoint(function() {
 
 /* VEGAS Home Slider */
 	
-		$.vegas('slideshow', { backgrounds:[{ src:'img/slider/01.jpg', fade:1000 },{ src:'img/slider/02.jpg', fade:1000 },{ src:'img/slider/03.jpg', fade:1000 },{ src:'img/slider/04.jpg', fade:1000 } ]
-			})('overlay', {src:'img/overlays/16.png'});
-			$( "#vegas-next" ).click(function() {$.vegas('next');});
-			$( "#vegas-prev" ).click(function() {$.vegas('previous');});
+    $(function() {
+  $.vegas({ src:'img/slider/800px-Arthur_Ravenel_Jr._Bridge%27s_cables.jpg'})
+  ('overlay', { src:'img/overlays/07.png'});
+});
 
 
 /*Contact form */
